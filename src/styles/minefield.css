@@ -1,0 +1,13 @@
+.minefield {
+    display: table;
+    border-collapse:collapse;
+}
+
+.minerow {
+  display: flex;
+  border-collapse:collapse;
+}
+
+.confetti {
+  margin-left: 50%;
+}

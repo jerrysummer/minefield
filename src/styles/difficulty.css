@@ -1,0 +1,17 @@
+.difficulty {
+  display: flex;
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Orbitron';
+  color: white;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.button {
+  margin: 10px;
+  cursor: pointer;
+}
+.button:hover {
+  color: aqua
+}

@@ -1,0 +1,20 @@
+.header {
+  display: flex;
+  color: white;
+  font-family: 'Orbitron';
+  margin: 20px;
+}
+
+.reset {
+  margin-left: 20px;
+  color: white;
+  cursor: pointer;
+}
+.reset:hover {
+  color: rgb(236, 61, 61);
+}
+
+.flagCount {
+  margin-left: 40px;
+  color: white;
+}

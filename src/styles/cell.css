@@ -1,0 +1,71 @@
+.cell {
+  background: radial-gradient(ellipse closest-corner at center, #7FD6FF 0%, #74C9FF 50%, #67B7FF 75%, #58A1FF 100%);
+  height: 40px;
+  width: 40px;
+  margin: 2px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 39px; 
+  border-radius: 4px;
+  font-weight: bolder;
+  font-size: 115%;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  transition: background-color 1s ease;
+  cursor: pointer;
+}
+
+.cell:hover { transform: scale(1.05); }
+
+
+.cell.hasflag {
+ background-color: #f8d745;
+ background-image: url('../assets/yellowpoleredflag.png');
+ background-repeat: no-repeat;
+ background-size: 30px;
+ background-position: center;
+}
+
+.cell.hasMine {
+ background-color: #f44336;
+ background-image: url('../assets/mineicon.png');
+ background-repeat: no-repeat;
+ background-size: 30px;
+ background-position: center; 
+}
+
+.cell.hasMine.won {
+ background-color: #97fd44;
+ background-image: url('../assets/mineicon.png');
+ background-repeat: no-repeat;
+ background-size: 30px;
+ background-position: center; 
+}
+
+.isOpen{
+ background: radial-gradient(ellipse closest-corner at center, rgb(255, 255, 255) 0%, rgb(245, 245, 245) 50%, rgb(245, 245, 245) 75%, rgb(220, 220, 220) 100%);
+}
+
+.count1 {
+  color: blue;
+}
+.count2 {
+  color: green;
+}
+.count3 {
+  color: rgb(230, 3, 3);
+}
+.count4 {
+  color: purple;
+}
+.count5 {
+  color: black;
+}
+.count6 {
+  color: maroon;
+}
+.count7 {
+  color: grey;
+}
+.count8 {
+  color: turquoise;
+}

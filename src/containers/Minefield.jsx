@@ -41,9 +41,9 @@ class Minefield extends Component {
     // confetti configs
     const configWin = {
       angle: 90,
-      spread: 99,
-      startVelocity: 30,
-      elementCount: 200,
+      spread: 180,
+      startVelocity: 25,
+      elementCount: 150,
       decay: 0.94
     };
     const configLoss = {

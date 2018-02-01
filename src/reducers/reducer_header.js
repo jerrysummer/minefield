@@ -9,6 +9,7 @@ export default function header(state = initHeaderState, action) {
       let newState = JSON.parse(JSON.stringify(state));
       newState.gameStatus = "NEW";
       newState.flagCount = action.payload.mineCount;
+      newState.mineCount = action.payload.mineCount;
       newState.row = action.payload.row;
       newState.col = action.payload.col;
       return newState;
@@ -39,6 +40,7 @@ export default function header(state = initHeaderState, action) {
 let initHeaderState = {
   gameStatus: 'NEW',
   flagCount: 5,
+  mineCount: 5,
   row: 9, 
   col: 9,
 }

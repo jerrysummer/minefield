@@ -1,12 +1,12 @@
 .header {
   display: flex;
   color: white;
+  justify-content: space-between;
   font-family: 'Orbitron';
-  margin: 20px;
+  padding: 10px 0px;
 }
 
 .reset {
-  margin-left: 20px;
   color: white;
   cursor: pointer;
 }
@@ -15,6 +15,11 @@
 }
 
 .flagCount {
-  margin-left: 40px;
+  min-width: 100px;
+  color: white;
+}
+.timer {
+  min-width: 100px;
+  float: right;
   color: white;
 }

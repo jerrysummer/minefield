@@ -16,26 +16,20 @@ class Timer extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (this.props.header.gameStatus === nextProps.header.gameStatus) {
+    let { gameStatus } = nextProps.header;
+
+    if (this.props.header.gameStatus === gameStatus) {
       return;
     }
-
-    let gameStatus = nextProps.header.gameStatus;
     
-    if(gameStatus === "NEW") {
+    if (gameStatus === "NEW") {
       this.resetTimer();
-      return;
-    } 
-    if(gameStatus === "PLAYING") {
+    } else if (gameStatus === "PLAYING") {
       this.startTimer();
-      return;
-    } 
-    if(gameStatus === "LOST") {
+    } else if (gameStatus === "LOST") {
       this.stopTimer();
-    } 
-    if(gameStatus === "WON") {
+    } else if (gameStatus === "WON") {
       this.stopTimer();
-      return;
     } 
   }
 
@@ -49,7 +43,8 @@ class Timer extends Component {
   }
 
   resetTimer() {
-    this.setState({ seconds: 0 });
+    this.setState({ seconds: '000' });
+    clearInterval(this.clockWork);
   }
 
   // converts second count between number and string to pad start with 0s

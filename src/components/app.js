@@ -10,10 +10,12 @@ import '../styles/app.css';
 export default class App extends Component {
   render() {
     return (
-      <div className="container">
-          <Header />
-          <Minefield />
-          <Difficulty />
+      <div className="container-wall">
+        <div className="container">
+            <Header />
+            <Minefield />
+            <Difficulty />
+        </div>
       </div>
     );
   }

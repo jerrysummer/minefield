@@ -15,7 +15,7 @@ class Cell extends React.Component {
     let { hasMine, hasFlag, isOpen, mineCount} = this.props.mine;
     let { gameStatus } = this.props.header;
     // stops clicking when game is over or cell is open
-    if (gameStatus === "WON" || gameStatus === "LOST" ) {
+    if (gameStatus === "WON" || gameStatus === "LOST" || hasFlag) {
       return;
     }
 

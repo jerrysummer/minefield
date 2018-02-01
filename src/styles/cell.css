@@ -11,6 +11,7 @@
   font-size: 115%;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   transition: background-color 1s ease;
+  background-size: 29px;
   cursor: pointer;
 }
 
@@ -18,27 +19,27 @@
 
 
 .cell.hasflag {
- background-color: #f8d745;
- background-image: url('../assets/yellowpoleredflag.png');
- background-repeat: no-repeat;
- background-size: 30px;
- background-position: center;
+  background-color: #f8d745;
+  background-image: url('../assets/yellowpoleredflag.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px;
 }
 
 .cell.hasMine {
- background-color: #f44336;
- background-image: url('../assets/mineicon.png');
- background-repeat: no-repeat;
- background-size: 30px;
- background-position: center; 
+  background-color: #f44336;
+  background-image: url('../assets/mineicon.png');
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: 29px;
 }
 
 .cell.hasMine.won {
  background-color: #97fd44;
  background-image: url('../assets/mineicon.png');
  background-repeat: no-repeat;
- background-size: 30px;
  background-position: center; 
+  background-size: 29px;
 }
 
 .isOpen{

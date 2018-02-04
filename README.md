@@ -3,7 +3,7 @@ Minefield
 
 This is a Minefield game made with React and Redux
 
-![Game Preview](./screenshot.png)
+![Game Preview](./demo.gif)
 
 ---
 
@@ -26,7 +26,7 @@ Click reset to start new game
 - [x] Add unit tests to cover edge cases
 
 
-####There are 3 difficulty levels:
+#### There are 3 difficulty levels:
 - **Easy:** 9 x 9 + 5 (mine count defaults to 5 for easy testing)
 - **Medium:** 15 x 15 + 40
 - **Hard:** 15 x 25 + 99

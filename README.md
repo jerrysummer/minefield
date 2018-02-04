@@ -1,7 +1,7 @@
-Minesweeper
+Minefield
 ============
 
-This is a minesweeper game made with React and Redux
+This is a Minefield game made with React and Redux
 
 ![Game Preview](./screenshot.png)
 
@@ -27,7 +27,7 @@ Click reset to start new game
 
 
 ####There are 3 difficulty levels:
-- **Easy:** 9 x 9 + 5 (mine defaults to 5 for easy testing)
+- **Easy:** 9 x 9 + 5 (mine count defaults to 5 for easy testing)
 - **Medium:** 15 x 15 + 40
 - **Hard:** 15 x 25 + 99
 
@@ -51,12 +51,12 @@ Supports [`Redux DevTools Chrome Extension`](https://chrome.google.com/webstore/
 
 ## TODOs
 
-- [ ] Deploy to Heroku
+- [x] Deploy to Heroku
 - [ ] Add integration and snapshot tests
 - [ ] Add form input for custom difficulty
-- [ ] Reset should reset using current difficulty
+- [x] Reset should reset using current difficulty
 - [ ] Prevent the first click from being a mine
-- [ ] Reposition flag count to float right
+- [x] Reposition flag count to float right
 - [ ] Add custom emoji to reset button
-- [ ] Scaling interface for small monitors and mobile
+- [x] Scaling interface for small monitors and mobile
 

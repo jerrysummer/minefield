@@ -17,19 +17,18 @@ class Timer extends Component {
 
   componentWillReceiveProps(nextProps) {
     let { gameStatus } = nextProps.header;
+    let { resetTimer, startTimer, stopTimer } = this;
 
     if (this.props.header.gameStatus === gameStatus) {
       return;
-    }
-    
-    if (gameStatus === "NEW") {
-      this.resetTimer();
+    } else if (gameStatus === "NEW") {
+      resetTimer();
     } else if (gameStatus === "PLAYING") {
-      this.startTimer();
+      startTimer();
     } else if (gameStatus === "LOST") {
-      this.stopTimer();
+      stopTimer();
     } else if (gameStatus === "WON") {
-      this.stopTimer();
+      stopTimer();
     } 
   }
 

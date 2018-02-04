@@ -44,7 +44,7 @@ class Cell extends React.Component {
 
   render() {
     let { mine, openMine, flagMine, header} = this.props;
-    let { hasMine, isOpen, hadFlag, mineCount} = mine;
+    let { hasMine, isOpen, hasFlag, mineCount} = mine;
     let { gameStatus } = this.props.header;
     let cellValue = '';
 
@@ -59,7 +59,7 @@ class Cell extends React.Component {
           e.preventDefault();
           this.handleFlagMine(mine.row, mine.col, mine.hasFlag);
         }}
-        className={`cell ${mine.isOpen ? 'isOpen' : ''} ${mine.hasFlag ? 'hasflag' : ''} count${mine.mineCount} ${(mine.hasMine && mine.isOpen) ? 'hasMine' : ''} ${(gameStatus === "WON") ? 'won' : ''}`}
+        className={`cell ${isOpen ? 'isOpen' : ''} ${hasFlag ? 'hasflag' : ''} count${mineCount} ${(hasMine && isOpen) ? 'hasMine' : ''} ${(gameStatus === "WON") ? 'won' : ''}`}
       >
         {
           cellValue

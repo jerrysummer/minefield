@@ -2,6 +2,7 @@ Minefield
 ============
 
 This is a Minefield game made with React and Redux
+Demo [`Link`](https://minesweeper-r-r.herokuapp.com)
 
 ![Game Preview](./demo.gif)
 

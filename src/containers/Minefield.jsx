@@ -10,30 +10,30 @@ import Cell from './Cell'
 class Minefield extends Component {
 
   componentDidUpdate() {
-    let that = this;
-    judge();
-    // check to see if game is over 
-    // endgame action is fired if game is won
-    function judge() {
-      let hasWon = true;
-      let row = that.props.minefield.length;
-      let col = that.props.minefield[0].length;
+    this.judge();
+  }
+  // check to see if game is over 
+  // endgame action is fired if game is won
 
-      for (let i = 0; i < row; i++) {
-        for (let j = 0; j < col; j++) {
-          let { hasMine, isOpen } = that.props.minefield[i][j];
-          if (!hasMine && !isOpen) {
-            hasWon = false;
-            break;
-          }
+  judge() {
+    let hasWon = true;
+    let row = this.props.minefield.length;
+    let col = this.props.minefield[0].length;
+
+    for (let i = 0; i < row; i++) {
+      for (let j = 0; j < col; j++) {
+        let { hasMine, isOpen } = this.props.minefield[i][j];
+        if (!hasMine && !isOpen) {
+          hasWon = false;
+          break;
         }
       }
+    }
 
-      let gameStatus = that.props.header.gameStatus;
+    let gameStatus = this.props.header.gameStatus;
 
-      if (hasWon && gameStatus === 'PLAYING') {
-        that.props.endGame('WON')
-      }
+    if (hasWon && gameStatus === 'PLAYING') {
+      this.props.endGame('WON')
     }
   }
 

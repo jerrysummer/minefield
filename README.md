@@ -53,7 +53,7 @@ Supports [`Redux DevTools Chrome Extension`](https://chrome.google.com/webstore/
 ## TODOs
 
 - [x] Deploy to Heroku
-- [ ] Refactor empty field logic into separte helper functions
+- [ ] Refactor empty field logic into separate helper functions 
 - [ ] Add integration and snapshot tests
 - [ ] Add form input for custom difficulty
 - [x] Reset should reset using current difficulty
